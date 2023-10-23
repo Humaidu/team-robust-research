@@ -1,0 +1,148 @@
+<div class="main container">
+  <div class="hero">
+    <h5 class="text-center">
+      School Enrolment issues and access to essential services
+    </h5>
+    <div class="text-center"><app-spider-lines></app-spider-lines></div>
+    <!-- <div style="height: 100vh; position: relative;">
+        <app-spider-lines></app-spider-lines>
+      </div> -->
+  </div>
+  <div class="data">
+    <h5>Graphs showing various data</h5>
+  </div>
+  <div class="row ghrap mt-5">
+    <div class="col-md-6 col-sm-6">
+      <h6>Distance to School facility by Region</h6>
+      <div style="display: block">
+        <canvas
+          baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [type]="'bar'"
+        ></canvas>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-6 g">
+      <h6>Forms of Difficulty in Performing activities by Gender</h6>
+      <div style="display: block">
+        <canvas
+          baseChart
+          [datasets]="barChartData2"
+          [labels]="barChartLabels2"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [type]="'bar'"
+        ></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- map -->
+  <div class="row ghrap mt-5 moving-text">
+    <div class="col-md-4 col-sm-4">
+      <div style="display: block">
+        <img
+          src="assets/map1.jpeg/"
+          class="img-fluid"
+          alt="map"
+          style="height: 500px; width: 700px"
+        />
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4 g">
+      <div style="display: block">
+        <img
+        src="assets/map2.jpeg/"
+        class="img-fluid"
+        alt="map"
+        style="height: 500px; width: 700px"
+      />
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 g">
+      <div style="display: block"> 
+        <img
+        src="assets/map1.jpeg/"
+        class="img-fluid"
+        alt="map"
+        style="height: 500px; width: 700px"
+      />
+      </div>
+    </div>
+  </div>
+
+  <!-- map -->
+
+  <div class="row ghrap mt-5">
+    <div class="col-md-6 col-sm-6">
+      <h6>
+        A measure of changes in the purchasing power of a currency and the rate
+        of inflation
+      </h6>
+      <div style="display: block">
+        <canvas
+          baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartDataLabel"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [type]="'line'"
+        ></canvas>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-6 g">
+      <h6>Distance to Water by School Attendance</h6>
+      <div style="display: block">
+        <canvas
+          baseChart
+          [datasets]="barChartData3"
+          [labels]="barChartLabels3"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [type]="'bar'"
+        ></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="row ghrap mt-5">
+    <div class="col-md-6 col-sm-6">
+      <h6>Types of Difficulties</h6>
+      <div style="display: block">
+        <canvas
+          baseChart
+          [datasets]="doughnutChartData"
+          [labels]="doughnutChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [type]="'doughnut'"
+        ></canvas>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-6 g">
+      <h6>Distance to Water by School Attendance - Radar Chart</h6>
+      <canvas
+          baseChart
+          [datasets]="barChartData3"
+          [labels]="barChartLabels3"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [type]="'radar'"
+        ></canvas>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="moving-text">
+    <!-- <h1>Lets text how you work</h1> -->
+</div>

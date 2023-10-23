@@ -1,0 +1,56 @@
+.hero{
+    height: 350px;
+    border-radius: 15px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    background-color: var(--primary-color);
+
+
+}
+
+.hero h5 {
+  color: #fff;
+}
+
+.ghrap,
+.data {
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+.data h5 {
+  font-weight: 600;
+}
+
+.ghrap h6 {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+@keyframes moveRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .moving-text {
+    animation: moveRight 10s linear infinite;
+  }
+
+@media screen and (max-width: 468px) {
+  .ghrap,
+  .data, .hero {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .g {
+    margin-top: 30px;
+  }
+}
